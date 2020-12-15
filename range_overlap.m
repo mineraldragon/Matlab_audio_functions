@@ -9,12 +9,13 @@ function resmat = range_overlap(arr1,arr2)
 %that is, the fraction of arr1 that is being overlapped by arr2
 
 %example
-%arr1=[1 5; 10 15; 20 25];
-%arr2=[6 9; 10 17; 24 29];
+%arr1=[1 5; 10 15; 20 25; 50 100];
+%arr2=[6 9; 10 17; 24 70];
 
 %first row of arr1: no overlap with any range of arr2
-%second row of arr1: 100% overlapped by second row of arr2
-%third row of arr1: 20% overlapped by third row of arr2
+%second row of arr1 is 100% overlapped by second row of arr2
+%third row of arr1 is 20% overlapped by third row of arr2 
+%fourth row of arr1 is 40% overlapped by third row of arr2
 
 %output:
 % resmat =
@@ -22,6 +23,7 @@ function resmat = range_overlap(arr1,arr2)
 %          0         0         0
 %          0    1.0000         0
 %          0         0    0.2000
+%          0         0    0.4000
 
 %rogierlandman 2020
 
